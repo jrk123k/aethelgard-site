@@ -1,11 +1,11 @@
 :root {
-  --bg: #0b0a08;
-  --bg-alt: #12100c;
-  --ink: #f4ead6;
-  --muted: #b7aa94;
-  --gold: #c9a66b;
-  --gold-soft: rgba(201, 166, 107, 0.22);
-  --line: rgba(244, 234, 214, 0.12);
+  --bg: #100e0b;
+  --bg-alt: #18150f;
+  --ink: #f7f0e2;
+  --muted: #d0c3ab;
+  --gold: #d8b778;
+  --gold-soft: rgba(216, 183, 120, 0.32);
+  --line: rgba(247, 240, 226, 0.18);
   --max: 68rem;
   --narrow: 40rem;
 }
@@ -123,21 +123,21 @@ a:hover {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: min(86vh, 44rem);
+  min-height: min(78vh, 38rem);
   display: grid;
   place-items: center;
   text-align: center;
   border-bottom: 1px solid var(--line);
-  padding: 5.5rem 0 4.5rem;
+  padding: 4.8rem 0 4rem;
 }
 
 .hero-glow {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 18%, rgba(201, 166, 107, 0.16), transparent 46%),
-    radial-gradient(ellipse at 50% 100%, rgba(201, 166, 107, 0.07), transparent 40%),
-    linear-gradient(180deg, #14110c 0%, var(--bg) 72%);
+    radial-gradient(ellipse at 50% 22%, rgba(216, 183, 120, 0.22), transparent 48%),
+    radial-gradient(ellipse at 50% 100%, rgba(216, 183, 120, 0.1), transparent 42%),
+    linear-gradient(180deg, #1a160f 0%, var(--bg) 74%);
   pointer-events: none;
 }
 
@@ -184,8 +184,16 @@ a:hover {
   line-height: 1.4;
 }
 
+.hero-rule {
+  width: 4.5rem;
+  height: 1px;
+  margin: 1.35rem auto 0;
+  background: var(--gold);
+  opacity: 0.75;
+}
+
 .hero-album {
-  margin: 1.4rem 0 0;
+  margin: 1.15rem 0 0;
   color: var(--muted);
 }
 
@@ -236,8 +244,9 @@ a:hover {
 
 .card,
 .artifacts li {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 248, 230, 0.035);
   border: 1px solid var(--line);
+  border-top: 1px solid var(--gold-soft);
   padding: 1.35rem 1.25rem 1.4rem;
 }
 
